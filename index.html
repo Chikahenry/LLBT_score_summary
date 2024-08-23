@@ -12,7 +12,11 @@
         <h1>Enter Score</h1>
         <form id="scoreForm">
             <label for="name">Name:</label>
-            <input type="text" id="name" required>
+            <input type="text" id="search" placeholder="Search participants..." oninput="filterParticipants()">
+            <select for="name" id="participantsSelect">
+                <!-- Options will be dynamically populated here -->
+            </select>
+            <!-- <input type="text" id="name" required> -->
             <label for="code">Code:</label>
             <input type="text" id="code" required>
             <label for="score">Score:</label>

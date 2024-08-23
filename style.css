@@ -35,7 +35,8 @@ label {
 }
 
 input[type="text"],
-input[type="number"] {
+input[type="number"],
+select {
  padding: 10px;
  border: 1px solid #ccc;
  border-radius: 5px;
@@ -73,21 +74,22 @@ a:hover {
 
 /* Table Styles */
 table {
- width: 100%;
+ width: 1000px;
  border-collapse: collapse;
  margin-top: 20px;
 
 }
 .table{
- max-width: 800px;
- margin: 0px 450px;
+ max-width: 1200px;
+ margin: 0px 250px;
  padding: 20px;
 }
 
 th,
 td {
  padding: 12px;
- border-bottom: 1px solid #ddd;
+ width: 450px;
+ /* border-bottom: 1px solid #ddd; */
  text-align: left;
 }
 
@@ -109,14 +111,18 @@ th {
 }
 td{
  padding-right: 50px !important;
+ font-size: 24px !important;
+
 }
 .blue-row {
  /* background-color: #d9edf7; */
+ font-weight: 700;
  color: #10a7f2;
 }
 
 .red-row {
  /* background-color: #f2dede; */
+ font-weight: 700;
  margin-right: 50px;
  color: #c40703;
 }
@@ -124,7 +130,19 @@ td{
  background-color: #007bff;
  color: #fff;
  border: none;
- margin-top: 340px;
+ margin-top: 10px;
+ padding: 5px 10px;
+ border-radius: 50%;
+ font-size: 16px;
+ cursor: pointer;
+ transition: background-color 0.3s ease;
+}
+
+.reset{
+ background-color: #007bff;
+ color: #fff;
+ border: none;
+ margin-top: 10px;
  padding: 5px 10px;
  border-radius: 50%;
  font-size: 16px;
