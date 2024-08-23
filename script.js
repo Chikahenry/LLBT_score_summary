@@ -58,7 +58,7 @@ const participants = [
     { id: 10, name: 'Effiong Treasure' },
     { id: 11, name: 'Simeon Stephanie' },
     { id: 12, name: 'Nwokeji Joshua Divine' },
-    { id: 13, name: 'Nwanchukwu John' },
+    { id: 13, name: 'Nwachukwu John' },
     { id: 14, name: 'Obiukwu Chiamaka Ruth' },
     { id: 15, name: 'Obiora Destiny Chikamso' },
     { id: 16, name: 'Chinweolu Ifunanya' },
