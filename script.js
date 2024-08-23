@@ -6,20 +6,20 @@ function submitForm() {
     //event.preventDefault();
     
      name = document.getElementById('participantsSelect').value;
-     code = document.getElementById('code').value.toLowerCase();
+    //  code = document.getElementById('code').value.toLowerCase();
     const score = parseInt(document.getElementById('score').value);
     if(score === null || score == 0) return
-    if (isNaN(score) && name === '' && code === '') {
+    if (isNaN(score) && name === '')  {
         alert('Please fill in all fields');
         return;
     }
     
-    let existingPerson = scores.find(person => person.code === code);
+    let existingPerson = scores.find(person => person.name === name);
     
     if (existingPerson) {
         existingPerson.score += score;
     } else {
-        scores.push({ name, code, score });
+        scores.push({ name, score });
     }
 
     localStorage.setItem('scores', JSON.stringify(scores));
