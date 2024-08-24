@@ -36,7 +36,7 @@ if (document.getElementById('scoreTable')) {
         row.className = index < 4 ? 'blue-row' : 'red-row';
         
         row.innerHTML = `
-            <td>${person.name.toUpperCase()}</td>
+            <td>${person.name}</td>
             <td>${person.score}</td>
             `;
             // <td>${person.code.toUpperCase()}</td>
